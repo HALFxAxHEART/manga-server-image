@@ -1,0 +1,12 @@
+services:
+  manga-suwayomi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "4567"
+    volumes:
+      - suwayomi-data:/home/suwayomi/.local/share/Tachidesk
+
+volumes:
+  suwayomi-data:
