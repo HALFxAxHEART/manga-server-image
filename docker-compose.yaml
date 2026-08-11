@@ -7,6 +7,12 @@ services:
       - "4567"
     volumes:
       - suwayomi-data:/home/suwayomi/.local/share/Tachidesk
+    networks:
+      - coolify
 
 volumes:
   suwayomi-data:
+
+networks:
+  coolify:
+    external: true
